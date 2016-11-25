@@ -19,9 +19,9 @@ install:
 
 before_build:
   - echo no | "%ANDROID_HOME%\tools\android.bat" create avd --force -n test -t android-21 --abi armeabi-v7a
-  - ps: Start-Process "C:\android-sdk-windows\tools\emulator.exe" "-avd test -no-audio -no-window" -PassThru
-  - ps: Start-sleep -s 90
-  - echo | "%ANDROID_HOME%\platform-tools\adb.exe" shell input keyevent 82 
+  - ps: Start-Process "C:\android-sdk-windows\tools\emulator.exe" "-avd test -no-audio -no-window" 
+  - ps: Start-sleep -s 120
+  - echo dummy | "%ANDROID_HOME%\platform-tools\adb.exe" shell input keyevent 82 
 
 build_script:
   - ps: $env:Path += ";C:\android-sdk-windows\platform-tools";

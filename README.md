@@ -1,2 +1,3 @@
-# ci_with_android_emulator
-An example of using online CI systems spawning Android emulators
+# ci_with_android_emulator [![Build Status](https://travis-ci.org/appetizerio/ci_with_android_emulator.svg?branch=master)](https://travis-ci.org/appetizerio/ci_with_android_emulator) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/ci_with_android_emulator)](https://ci.appveyor.com/project/mingyuan-xia/ci-with-android-emulator)
+This repo demonstrates the configurations to ask TravisCI and AppVeyor to spawn an Android emulator and run custom Python-based tests that depend on an Android device.
+We are awaiting mature support of Android SDK on TravisCI OSX to add support for OSX testing.

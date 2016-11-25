@@ -17,8 +17,6 @@ install:
   - echo y | "%ANDROID_HOME%\tools\android.bat" update sdk -u -a -t extra-android-m2repository
   - echo y | "%ANDROID_HOME%\tools\android.bat" update sdk -u -a -t sys-img-armeabi-v7a-android-21
 
-build: off
-
 before_test:
   - echo no | "%ANDROID_HOME%\tools\android.bat" create avd --force -n test -t android-21 --abi armeabi-v7a
 #  - "%ANDROID_HOME%\tools\emulator.bat" -avd test -no-audio -no-window &

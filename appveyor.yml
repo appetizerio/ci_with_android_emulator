@@ -19,7 +19,7 @@ install:
 
 before_build:
   - echo no | "%ANDROID_HOME%\tools\android.bat" create avd --force -n test -t android-21 --abi armeabi-v7a
-  - "%ANDROID_HOME%\tools\emulator.bat" -avd test -no-audio -no-window &
+  - echo | "%ANDROID_HOME%\tools\emulator.bat" -avd test -no-audio -no-window &
   - Start-sleep 180
   - adb shell input keyevent 82 &
 
